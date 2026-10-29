@@ -1,0 +1,44 @@
+MOVIE RECOMMENDATION SYSTEM USING MACHINE LEARNING
+
+Submitted by: Rajkumar Sirohi
+Roll No.: 2300650100093
+
+1. Abstract
+This project builds a content-based movie recommendation system. Given a movie selected by the user, the system suggests similar movies using TF-IDF and cosine similarity. A Streamlit interface makes the system interactive.
+
+2. Problem Statement
+Users face too many movie choices. A recommender helps by suggesting movies similar to ones they already like.
+
+3. Objectives
+- Understand content-based filtering.
+- Convert text (genres and overview) into TF-IDF features.
+- Compute similarity between movies using cosine similarity.
+- Build an interactive web interface with Streamlit.
+
+4. Technologies Used
+Python, Pandas, Scikit-learn, Streamlit, CSV, Visual Studio Code.
+
+5. Methodology
+1. Load movies.csv (title, year, genres, overview).
+2. Combine genres (repeated for more weight) with the overview into one text field.
+3. Apply TF-IDF vectorization with English stop words removed.
+4. Compute the cosine similarity matrix for all movies.
+5. For a selected movie, sort other movies by similarity and show the top N.
+
+6. Features
+- Recommendation page with movie selection and number of results.
+- Dataset page with genre filter.
+
+7. Limitations
+- Small sample dataset (40 movies).
+- No user ratings or viewing history.
+- Only genres and overview text are used.
+- Results are for demonstration only.
+
+8. Future Scope
+- Use a larger real movie dataset.
+- Add collaborative filtering with user ratings.
+- Add posters and search.
+
+9. Conclusion
+The project demonstrates a complete introductory recommender workflow, from text features to similarity-based suggestions in a web app.
